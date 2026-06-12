@@ -300,11 +300,11 @@ PUT YOUR BASE64 LOGOS HERE
 
 // YOUR LOGO
 const myLogoBase64 =
-"data:image/png;base64,PASTE_YOUR_BASE64_HERE"
+"ChatGPT Image Jun 11, 2026, 10_44_13 AM.png"
 
 // REHAN SCHOOL LOGO
 const rehanLogoBase64 =
-"data:image/png;base64,PASTE_REHAN_BASE64_HERE"
+"Rehan School Logo.png"
 
 document.getElementById("mainLogo").src = myLogoBase64
 
@@ -778,7 +778,13 @@ ctx.strokeRect(35,35,1130,730)
 /* MY LOGO */
 
 const myLogo = new Image()
+myLogo.src = "ChatGPT Image Jun 11, 2026, 10_44_13 AM.png"
 
+myLogo.onload = function(){
+
+ctx.drawImage(myLogo,90,70,130,130)
+
+}
 myLogo.src = myLogoBase64
 
 myLogo.onload = function(){
